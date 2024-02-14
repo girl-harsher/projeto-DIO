@@ -11,7 +11,7 @@ class hero {
             case 'mago':
                 ataque = 'usando magia';
                 break;
-            case 'guerreiro':
+            case 'guerreira':
                 ataque = 'usando espada';
                 break;
             case 'monge':
@@ -23,11 +23,11 @@ class hero {
             default:
                 ataque = 'não tem um ataque definido';
         }
-        console.log(`O ${this.tipo} atacou a sua mãe ${ataque}`);
+        console.log(`A ${this.tipo} ${this.nome} atacou a sua mãe ${ataque}`);
     }
 }
 
-let guerreiro = new hero("Esther", 22, "guerreiro");
+let guerreiro = new hero("Esther", 22, "guerreira");
 let mago = new hero("Gandalf", 150, "mago");
 
 guerreiro.atacar();
